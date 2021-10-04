@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8049002569602309701}
   - component: {fileID: 6453610655081512713}
   - component: {fileID: 4258809705799554438}
+  - component: {fileID: 452029174619671003}
   m_Layer: 0
   m_Name: SpriteEnemy
   m_TagString: Untagged
@@ -122,7 +123,7 @@ BoxCollider2D:
   m_Offset: {x: 0.017010808, y: -0.7404417}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 2.1333334, y: 2.1333334}
     newSize: {x: 2.56, y: 2.56}
     adaptiveTilingThreshold: 0.5
@@ -147,3 +148,22 @@ MonoBehaviour:
   speed: 3
   vertical: 0
   changeTime: 3
+--- !u!95 &452029174619671003
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693410913949186368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
