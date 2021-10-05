@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3571685937986393927}
   - component: {fileID: 7547420967606490783}
   - component: {fileID: 5322277574736211650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteRuby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
