@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     public float speed = 3.0f;
     public bool vertical;
     public float changeTime = 3.0f;
+    public ParticleSystem smokeEffect;
     bool broken = true;
 
     Rigidbody2D rigidbody2D;
@@ -77,6 +78,6 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
-        Destroy(gameObject);
+        smokeEffect.Stop();
     }
 }
