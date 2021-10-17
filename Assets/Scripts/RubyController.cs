@@ -20,6 +20,7 @@ public class RubyController : MonoBehaviour
     float vertical;
     
     Animator animator;
+    AudioSource audioSource;
     Vector2 lookDirection = new Vector2(1,0);
 
     public GameObject projectilePrefab;
@@ -29,8 +30,9 @@ public class RubyController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        
         currentHealth = maxHealth;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -84,6 +86,11 @@ public class RubyController : MonoBehaviour
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     public void ChangeHealth(int amount)
